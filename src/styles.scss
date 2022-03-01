@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+@font-face {
+    font-family: 'SpecialElite-Regular';
+    src: url('../src/assets/fonts/SpecialElite-Regular.ttf') format('truetype');
+}
+
+$bg-color:#deb887;
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.layout-wrapper {
+    background: $bg-color;
+    font-family: 'SpecialElite-Regular';
+    min-height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+// a {
+//     color: black; 
+//     text-decoration: none;
+//     cursor: pointer;
+// }
