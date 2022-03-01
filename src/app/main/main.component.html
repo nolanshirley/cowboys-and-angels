@@ -1,0 +1,51 @@
+<div class="layout-wrapper">
+    <div style="position: sticky; top: 0;" >
+        <div class="flex flex-row items-center justify-evenly ml-4 absolute" *ngIf="isNotMobile()">
+            <h2 class="callDiv" >Call: 317-358-6119</h2>
+            <div class="flex flex-row items-center justify-center mr-4 instaLogo instaLogo-primary" (click)="navigateInstagram()">
+                <h2 class="pt-2 pr-2 font-extrabold">
+                    Follow Us On
+                </h2>
+                <h1 class="pt-2" style="font-size: 2rem;" >
+                    <i class="bi bi-instagram"></i> 
+                </h1>
+            </div>
+        </div>
+    
+        <div class="background" *ngIf="isNotMobile()">
+            <div class="flex z-10 pt-8">
+                <div class="card">
+                    <img class="logo" src="../../../assets/images/logo.png" alt="logo-icon">
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="title"> Cowboys & Angels Salon </h1> 
+                    <h1 class="stylingTitle"> Styling for Men & Women</h1>
+                </div>
+            </div>
+        </div>
+        <div class="mobileBackground" *ngIf="isMobile()">
+            <div class="flex flex-row items-center justify-between">
+                <div class="">
+                    <img class="mobileLogo" src="../../../assets/images/logo.png" alt="logo-icon" >
+                </div>
+                <div class="">
+                    <img class="" src="../../../assets/images/line.png" alt="icon" style="margin-top: -1rem;">
+                </div>
+            </div>
+        </div>
+    
+        <div class="menuComponent" *ngIf="isNotMobile()">
+            <app-navbar></app-navbar>
+        </div>
+    </div>
+
+    <div class="layout-main-content" [@routeAnimations]="prepareRoute(outlet)" >
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+
+    <footer class="footer">
+        <app-footer></app-footer>
+    </footer>
+
+
+</div>

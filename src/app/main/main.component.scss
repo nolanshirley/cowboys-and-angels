@@ -1,0 +1,276 @@
+.background {
+    background: url('../../assets/images/background-saunatheme2.jpg') no-repeat center center fixed;
+    height: 20rem;
+}
+
+.mobileBackground {
+    background: url('../../assets/images/background-saunatheme2.jpg') no-repeat center center fixed;
+    height: 7.5rem;
+}
+
+.hey {
+    position: absolute;
+}
+
+.callDiv {
+    margin-top: 0; padding-top: 2rem; padding-left: 19.35rem; padding-right: 18rem; color: beige;
+}
+
+.logo {
+    width: 30rem;
+    height: 24rem;
+    margin-left: -4.5rem; 
+    margin-top: -6rem;
+    filter: invert(94%) sepia(5%) saturate(1500%) hue-rotate(334deg) brightness(200%) contrast(92%);
+    z-index: 10;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInFarLeft;
+}
+
+.mobileLogo {
+    max-width: 13rem;
+    max-height: 16rem;
+    margin-left: -2.5rem;
+    margin-top: -1.5rem;
+    filter: invert(94%) sepia(5%) saturate(1500%) hue-rotate(334deg) brightness(200%) contrast(92%);
+}
+
+.instaLogo {
+    // position: relative;
+    transition: all .2s ease;
+    letter-spacing: .025em;
+    border-color: #d1d9e6;
+    border-radius: 6px;
+    box-shadow: 3px 3px 6px #fff, -3px -3px 6px #fff;
+    color: beige;
+    width: 240px;
+    height: 55px;
+  }
+  
+  .instaLogo-primary:hover {
+    color: #deb887;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 5px #946B45, inset -3px -3px 7px #fff;
+  }
+
+.menuComponent {
+    // margin-left: 20.8rem; 
+    margin-top: -3rem;
+    // position: absolute;
+}
+
+.layout-main-content {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    // padding-left: 4rem;
+    // padding-right: 4rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    line-height: 2rem;
+}
+
+.title {
+    padding-left: 0rem; 
+    font-size: 4rem;
+    position: relative;
+    color: beige
+    // text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+    // color: beige;
+    // animation-duration: 1.4s;
+    // animation-timing-function: ease-in-out;
+    // animation-delay: 0s;
+    // animation-iteration-count: 1;
+    // animation-name: slideInLeft;
+    // animation: 1.2s ease-out 0s 1 slideInLeft --> shorthand for above properties
+}
+
+.stylingTitle {
+    padding-left: 30rem;
+    font-size: 2.2rem;
+    color: beige;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInRight;
+}
+
+@media screen and (max-width: 380px) { // iphoneX View
+    .title {
+        font-size: 1rem;
+        display: none;
+    }
+
+    .logo {
+        max-width: 12rem;
+        max-height: 12rem;
+        margin-left: -3.5rem;
+        margin-top: -7.5rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .layout-main-content {
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 1259px) {
+
+    // .menuComponent {
+    //     // padding-top: 1rem;
+    //     margin-left: 10rem;
+    // }
+
+    // .layout-main-content {
+    //     padding-top: 12rem;
+    // }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .stylingTitle {
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .logo {
+        width: 18.5rem;
+        height: 18.5rem;
+        padding-top: 2.2rem;
+        padding-left: 1rem;
+    }
+
+    // .menuComponent {
+    //     margin-left: 2rem;
+    //     position: absolute;
+    //     padding-top: 0;
+    // }
+
+    .title {
+        font-size: 3rem;
+        padding-left: 0;
+    }
+
+    .stylingTitle {
+        padding-top: 1rem;
+        padding-left: 0;
+    }
+
+    .callDiv {
+        padding-left: 0rem;
+        padding-top: 1.5rem;
+        padding-right: 15rem;
+    }
+}
+
+@media screen and (max-width: 1173px) {
+    .callDiv {
+        padding-right: 12rem;
+    }
+}
+
+@media screen and (max-width: 863px) {
+    .callDiv {
+        padding-right: 10rem;
+    }
+
+    .layout-main-content {
+        padding-top: 14rem;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .callDiv {
+        padding-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .callDiv {
+        padding-right: 2rem;
+    }
+}
+
+// @media screen and (max-width: 780px) { // ipad view
+//     .logo {
+//         margin-top: -4rem;
+//     }
+// }
+
+@media screen and (max-width: 580px) { // ipad view
+    .title {
+        padding-top: 1rem;
+        font-size: 2.4rem;
+    }
+
+    .stylingTitle {
+        font-size: 1.6rem;
+    }
+
+    .callDiv {
+        font-size: 1.3rem;
+    }
+    
+    .hey {
+        padding-top: 1rem;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-20%);
+      opacity: 0.4;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+@keyframes slideInRight {
+    0% {
+    transform: translate(10%, 40%);
+    // transform: translateY(30%);
+    opacity: 0.4;
+    }
+    100% {
+    transform: translateX(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    }
+  }
+
+@keyframes slideInFarLeft {
+    0% {
+    transform: translate(-50%, 0%);
+    opacity: 0.4;
+    }
+    100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+    }
+  }

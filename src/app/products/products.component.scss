@@ -1,0 +1,58 @@
+@media screen and (max-width: 991px) {
+    .display {
+        display: none;
+    }
+
+    .width {
+        width: 100%;
+    }
+
+    .margin {
+        margin: 0;
+    }
+
+    .gageImg {
+        height: 12rem;
+        width: 23.5rem;
+        margin-top: -1rem;
+    }
+
+    .beautyImg {
+        height: 12rem;
+        width: 23.5rem;
+        margin-top: -1rem;
+    }
+
+}
+
+.display2 {
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-20%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+.refImg {
+    margin-top: -0.28rem;
+    height: 20rem; width: 40rem;
+}
+
+.gageImg {
+    height: 20rem; width: 40rem;
+}
+
+.beautyImg {
+    margin-top: -0.297rem;
+    height: 20rem; width: 40rem;
+}
