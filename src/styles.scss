@@ -18,7 +18,8 @@ html {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-color: $bg-color;
+    // background-color: #FFECB3;
+    background-color: white;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 }
 
 .layout-wrapper {
-    background: $bg-color;
+    background: white;
     font-family: 'SpecialElite-Regular';
     min-height: 100vh;
     position: relative;
@@ -40,3 +41,5 @@ body {
 //     text-decoration: none;
 //     cursor: pointer;
 // }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

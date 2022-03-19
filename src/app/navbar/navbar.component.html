@@ -1,22 +1,18 @@
-<div class="flex flex-row align-items-center justify-content-evenly">
-    <div class="router">
-        <a routerLink="stylists" class="activate btn" routerLinkActive="active" >
-            Stylists
-        </a>
-    </div>
-    <div class="router" >
-        <a routerLink="products" class="activate btn" routerLinkActive="active" >
-            Products
-        </a>
-    </div>
-    <div class="router" >
-        <a routerLink="services" class="activate btn" routerLinkActive="active" >
-            Services
-        </a>
-    </div>
-    <div class="router">
-        <a routerLink="contact" class="activate btn" routerLinkActive="active" >
-            Contact
-        </a>
-    </div>
+<div class="flex items-center justify-between mt-6 relative" *ngIf="isMobile()">
+    <a routerLink="stylists" class="sm:text-xl lg:text-2xl text-slate-800 font-extrabold hover:shadow-2xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-800 duration-500" routerLinkActive="active" >
+        Stylists
+    </a>
+    <a routerLink="products" class="sm:text-xl lg:text-2xl text-slate-800 font-extrabold hover:shadow-2xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-800 duration-500" routerLinkActive="active" >
+        Products
+    </a>
+    <a routerLink="services" class="sm:text-lg lg:text-2xl text-slate-800 font-extrabold hover:shadow-2xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-800 duration-500" routerLinkActive="active" >
+        Services
+    </a>
+    <a routerLink="contact" class="sm:text-xl lg:text-2xl text-slate-800 font-extrabold hover:shadow-2xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-800 duration-500" routerLinkActive="active" >
+        Contact
+    </a>
+</div>
+
+<div *ngIf="!isMobile()">
+    <h1>hello</h1>
 </div>

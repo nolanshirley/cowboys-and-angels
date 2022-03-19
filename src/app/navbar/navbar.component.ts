@@ -12,4 +12,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isMobile() {
+    return window.screen.width <= 640;
+  }
+
+  isNotMobile() {
+    return window.screen.width >= 640;
+  }
+
 }
