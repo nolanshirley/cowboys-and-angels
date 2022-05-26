@@ -1,4 +1,4 @@
-<div class="flex items-center justify-between mt-6 relative" *ngIf="isMobile()">
+<!-- <div class="flex items-center justify-between mt-6 relative" *ngIf="!mobile">
     <a routerLink="stylists" class="sm:text-xl lg:text-2xl text-slate-800 font-extrabold hover:shadow-2xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-800 duration-500" routerLinkActive="active" >
         Stylists
     </a>
@@ -11,8 +11,12 @@
     <a routerLink="contact" class="sm:text-xl lg:text-2xl text-slate-800 font-extrabold hover:shadow-2xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:text-amber-800 duration-500" routerLinkActive="active" >
         Contact
     </a>
-</div>
+</div> -->
 
-<div *ngIf="!isMobile()">
-    <h1>hello</h1>
+<div class="">
+    <p-sidebar [(visible)]="display" position="right" style="background-color: orange;" [baseZIndex]="10000" *ngIf="display">
+        <h1>hello from the sidebar</h1>
+    </p-sidebar>
+    <p-button type="button" (onClick)="handleClick($event)" icon="pi pi-bars" style="color: blue;">
+    </p-button>
 </div>

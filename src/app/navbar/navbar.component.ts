@@ -6,18 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  display: boolean = false;
+
+  mobile = false;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    if (window.screen.width === 360) { // 768px portrait
+      this.mobile = true;
+    }
+    window.onresize = () => this.mobile = window.innerWidth <= 640;
   }
 
-  isMobile() {
-    return window.screen.width <= 640;
-  }
-
-  isNotMobile() {
-    return window.screen.width >= 640;
+  handleClick(e: void) {
+    this.display = !this.display;
   }
 
 }
